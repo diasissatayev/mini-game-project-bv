@@ -50,6 +50,10 @@ run they see a result screen with their loot and a clear call to action, such as
 - Requires the "boxed" 1C-Bitrix: Site Management with PHP access. **Not possible on cloud
   Bitrix24.Sites**, which only allow an HTML/iframe block, so an external backend would be needed there.
 
+**Update:** our Bitrix developer confirmed that there's no ready-made integration, but a custom PHP
+layer is possible. The spec for that layer, written in Russian for the developer, is in
+[`docs/BITRIX_INTEGRATION_SPEC.md`](docs/BITRIX_INTEGRATION_SPEC.md).
+
 ➡ **Plan:** build the game as a standalone static bundle first (it works with A), and design it
 so that the "open chest" step calls a pluggable `PrizeService`. For B, we then just add the
 Bitrix component and API.
